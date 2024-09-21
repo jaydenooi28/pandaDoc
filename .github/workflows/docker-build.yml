@@ -13,8 +13,8 @@ jobs:
       - name: Pull Base Image
         run: docker pull jaydenooi28/pandatut:latest
       - name: Build Docker Image
-        run: docker build --tag jaydenooi28/pandtut:latest .
+        run: docker build --tag jaydenooi28/pandatut:latest .
       - name: Log in to Docker Hub
         run: docker login --username jaydenooi28 --password ${{ secrets.DOCKER_HUB_PASSWORD }}
       - name: Push Docker Image
-        run: docker push jaydenooi28/pandtut:latest
+        run: docker push jaydenooi28/pandatut:latest
